@@ -1,0 +1,116 @@
+@media all and (max-width:1620px) {
+	.foot>div {
+		margin: 0 auto;
+	}
+
+	.ccc {
+		float: none;
+	}
+
+	.foot .c {
+		float: none;
+	}
+}
+
+@media all and (max-width:1532px) {
+	body {
+		min-width: 100%;
+	}
+
+	.ly-flex {
+		height: 205rem;
+	}
+
+	.ly-flex>div {
+		width: 32%;
+	}
+}
+
+@media all and (max-width:1111px) {
+	#header {
+		display: none;
+	}
+
+	.s-c {
+		width: auto;
+		height: 450px;
+	}
+
+	#lll {
+		height: 100%;
+	}
+
+	#www {
+		height: 100%;
+	}
+
+	.s-w {
+		width: 100%;
+		height: 100%;
+	}
+	.s-c1 {
+		width: 100%;
+	}
+}
+
+@media all and (max-width:1064px) {
+	.ly-flex {
+		height: 325rem;
+	}
+
+	.ly-flex>div {
+		width: 49%;
+	}
+
+	.xce li {
+		width: 100%;
+	}
+
+}
+
+@media all and (max-width:900px) {
+	.s-c {
+		width: auto;
+		height: 300px;
+	}
+
+	#lll {
+		height: 100%;
+	}
+
+	#www {
+		height: 100%;
+	}
+
+	.s-w {
+		width: 100%;
+		height: 100%;
+
+	}
+
+	@media all and (max-width:500px) {
+		.ly-flex {
+			height: 590rem;
+		}
+
+		.ly-flex>div {
+			width: 100%;
+		}
+
+		.s-c {
+			width: auto;
+			height: 200px;
+		}
+
+		#lll {
+			height: 100%;
+		}
+
+		#www {
+			height: 100%;
+		}
+
+		.s-w {
+			width: 100%;
+			height: 100%;
+		}
