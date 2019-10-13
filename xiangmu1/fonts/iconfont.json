@@ -1,0 +1,30 @@
+{
+  "id": "1454183",
+  "name": "头像购物放大镜",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1473952",
+      "name": "放大镜",
+      "font_class": "fangdajing",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "4331462",
+      "name": "头像",
+      "font_class": "touxiang-copy",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9320589",
+      "name": "购物车",
+      "font_class": "cart1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    }
+  ]
+}
