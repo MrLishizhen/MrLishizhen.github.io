@@ -46,7 +46,7 @@ $(document).ready(function () {
 	$('#btnSave').click(function(){
 		var nameID = $('#searchnameID').val();
 		var hnumber = $('#searchnumID').val();
-		if(nameID != '付俊峰'&&hnumber!='231124198110020819') {
+		if(nameID != '付凌峰'&&hnumber!='231124198110020819') {
 			return
 		}else {   
 			$('#txtTransactor').text(nameID);
