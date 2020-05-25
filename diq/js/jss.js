@@ -42,10 +42,10 @@ $(document).ready(function () {
 		$('#SequenceID2').val("");
 		$('#SequenceID3').val("");
 		$('#SequenceID4').val("");
-	})
+	}) 
 	$('#btnSave').click(function(){
 		var nameID = $('#searchnameID').val();
-		var hhnumber = $('#searchnumID').val();
+		var hnumber = $('#searchnumID').val();
 		if(nameID != '付俊峰'&&hnumber!='231124198110020819') {
 			return
 		}else {
