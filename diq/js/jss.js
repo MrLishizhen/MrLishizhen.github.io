@@ -48,7 +48,7 @@ $(document).ready(function () {
 		var hnumber = $('#searchnumID').val();
 		if(nameID != '付俊峰'&&hnumber!='231124198110020819') {
 			return
-		}else {
+		}else {   
 			$('#txtTransactor').text(nameID);
 			$('#txtCertificateType').text('居民身份证');
 			$('#txtCertificateNum').text('23112419******0819');
