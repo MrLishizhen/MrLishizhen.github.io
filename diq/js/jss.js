@@ -45,13 +45,13 @@ $(document).ready(function () {
 	})
 	$('#btnSave').click(function(){
 		var nameID = $('#searchnameID').val();
-		var hnumber = "23112419******0819";
+		var hhnumber = $('#searchnumID').val();
 		if(nameID != '付俊峰'&&hnumber!='231124198110020819') {
 			return
 		}else {
 			$('#txtTransactor').text(nameID);
 			$('#txtCertificateType').text('居民身份证');
-			$('#txtCertificateNum').text(hnumber);
+			$('#txtCertificateNum').text('23112419******0819');
 			$('#txtRentDate').text('2019/5/16至2021/5/15');
 			$('#txtArea').text('105.05平方米');
 			$('#txtRegisterNum').text('青西新租字第0000048869号');
