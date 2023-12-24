@@ -37,8 +37,9 @@ svg {
 
 .christmas {
   background-color: #000;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   position: relative;
 }
 
@@ -62,7 +63,7 @@ svg {
   top: 0;
   left: 0; */
   display: block;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding-top: 60px;
   /* z-index: 100; */
@@ -213,7 +214,7 @@ svg {
     width: 20%;
   }
   .video {
-    width: 100%;
+    width: 80%;
   }
 }
 
