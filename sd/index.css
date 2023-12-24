@@ -202,6 +202,17 @@ svg {
   text-align: center;
 }
 
+.audio {
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+  background: url(./img/背景音乐.png) no-repeat center center/100%;
+}
+
 @media (max-width: 480px) {
   /* 在此处添加针对小屏幕的样式 */
   .lu {

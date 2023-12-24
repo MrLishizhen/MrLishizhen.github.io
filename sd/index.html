@@ -32,14 +32,38 @@
         别急别急,马上就来
       </div>
     </div>
-
+    <div class="audio">
+      <audio
+        id="audio_item"
+        src="./圣诞歌曲 - 铃儿响叮当.ogg"
+        autoplay
+        loop
+        preload="auto"
+      ></audio>
+    </div>
     <script>
+      let audio_hot = false;
       const christmas = document.querySelector(".christmas");
       const video = document.querySelector(".video");
-      video.addEventListener("ended", () => {
-        console.log("结束");
+      const audio = document.querySelector(".audio");
+      const audio_item = document.querySelector("#audio_item");
+
+      audio.addEventListener("click", function (e) {
+        e.preventDefault();
+        console.log("执行");
+        audio_hot = !audio_hot;
+        if (audio_hot) {
+          audio_item.play();
+          audio.style.backgroundImage = `url(./img/music.png)`;
+        } else {
+          audio_item.pause();
+          audio.style.backgroundImage = `url(./img/背景音乐.png)`;
+        }
+      });
+      video.addEventListener("play", () => {
         // video.style.display = "none";
-        christmas.innerHTML = `<div
+        setTimeout(() => {
+          christmas.innerHTML = `<div
         class="content"
         style="
           margin: 0 auto;
@@ -88,6 +112,7 @@
         <img class="lwh" src="./img/圣诞礼盒.png" alt="" />
         <div class="y_title animate__animated animate__rubberBand">Merry Christmas</div>
       </div>`;
+        }, 5000);
       });
     </script>
   </body>
