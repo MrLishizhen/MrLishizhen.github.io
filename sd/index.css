@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pacifico", cursive;
+}
+svg {
+  width: 300px;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+#semicircle {
+  fill: none; /* 去掉填充颜色 */
+  stroke: none; /* 去掉边框颜色 */
+}
+
+.text {
+  font-weight: 600;
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+  animation: highlight 2s linear infinite;
+}
+
+@keyframes highlight {
+  0% {
+    text-shadow: 0 0 0 transparent; /* 初始状态，无阴影 */
+  }
+  50% {
+    text-shadow: 0 0 10px yellow; /* 中间状态，高亮阴影 */
+  }
+  100% {
+    text-shadow: 0 0 0 transparent; /* 结束状态，无阴影 */
+  }
+}
+
+.christmas {
+  background-color: #000;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  /* background-image: url(./img/1.webp); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-clip: padding-box;
+}
+
+.loading {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.video {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 60px;
+  /* z-index: 100; */
+}
+
+.ren {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  width: 10%;
+}
+
+.lu {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 10%;
+}
+
+.sds {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 10px rgba(100, 200, 0, 0.5));
+  /* background: url(./img/圣诞树.png) no-repeat center center/100% 100%; */
+}
+.lwh {
+  width: 10%;
+  position: absolute;
+  top: 56%;
+  right: 27%;
+}
+
+.xx1 {
+  width: 4%;
+  position: absolute;
+  top: 19%;
+  left: 9%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.xx2 {
+  width: 4%;
+  position: absolute;
+  top: 14%;
+  left: 39%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.xx3 {
+  width: 4%;
+  position: absolute;
+  top: 37%;
+  left: 60%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.xx4 {
+  width: 4%;
+  position: absolute;
+  top: 26%;
+  left: 27%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.xx5 {
+  width: 4%;
+  position: absolute;
+  top: 15%;
+  left: 72%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.xx6 {
+  width: 4%;
+  position: absolute;
+  top: 41%;
+  left: 14%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.xx7 {
+  width: 4%;
+  position: absolute;
+  top: 29%;
+  left: 82%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 4.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.xx8 {
+  width: 4%;
+  position: absolute;
+  top: 26%;
+  left: 95%;
+  transform: rotate(45deg);
+  animation-name: textLoadingAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.y_title {
+  color: #fff;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-style: italic;
+  animation: text-shadow-animation 2s linear infinite;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* 在此处添加针对小屏幕的样式 */
+  .lu {
+    width: 20%;
+  }
+  .sds {
+    width: 60%;
+  }
+  .ren {
+    width: 20%;
+  }
+  .video {
+    width: 100%;
+  }
+}
+
+@keyframes textLoadingAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes text-shadow-animation {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px yellow;
+  }
+  100% {
+    text-shadow: none;
+  }
+}

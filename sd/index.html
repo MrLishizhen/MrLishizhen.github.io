@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圣诞节专属</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="christmas">
+      <video
+        class="video"
+        autoplay
+        muted
+        src="./img/V-165791-7672212A.mp4"
+      ></video>
+      <div class="loading animate__animated animate__lightSpeedInRight">
+        猜猜后面是什么...
+      </div>
+      <div
+        class="loading animate__animated animate__lightSpeedInLeft animate__delay-2s"
+      >
+        就要来咯
+      </div>
+      <div
+        class="loading animate__animated animate__rotateIn animate__delay-3s"
+      >
+        别急别急,马上就来
+      </div>
+    </div>
+
+    <script>
+      const christmas = document.querySelector(".christmas");
+      const video = document.querySelector(".video");
+      video.addEventListener("ended", () => {
+        // video.style.display = "none";
+        christmas.innerHTML = `<div
+        class="content"
+        style="
+          margin: 0 auto;
+          width: 100%;
+          height: 100vh;
+          max-width: 790px;
+          max-height: 100vh;
+          position: relative;
+        "
+      >
+        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+          <defs>
+            <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ff0000" />
+              <stop offset="50%" stop-color="#FFDF00" />
+              <stop offset="100%" stop-color="#ff0000" />
+            </linearGradient>
+          </defs>
+          <path id="semicircle" d="M 0 100 A 100 60 0 0 1 300 100"></path>
+          <text>
+            <textPath
+              xlink:href="#semicircle"
+              startOffset="50%"
+              text-anchor="middle"
+              class="text"
+            >
+              <!-- 圣诞 ♥ 快乐 -->
+              <tspan dy="-5" style="fill: url(#textGradient)">
+                圣诞 ♥ 快乐
+              </tspan>
+            </textPath>
+          </text>
+        </svg>
+
+        <img class="xx1" src="./img/星星.png" />
+        <img class="xx2" src="./img/星星.png" />
+        <img class="xx3" src="./img/星星.png" />
+        <img class="xx4" src="./img/星星.png" />
+        <img class="xx5" src="./img/星星.png" />
+        <img class="xx6" src="./img/星星.png" />
+        <img class="xx7" src="./img/星星.png" />
+        <img class="xx8" src="./img/星星.png" />
+        <img class="ren" src="./img/1.png" alt="" />
+        <img class="lu" src="./img/小鹿.png" alt="" />
+        <img class="sds" src="./img/圣诞树.png" alt="" />
+        <img class="lwh" src="./img/圣诞礼盒.png" alt="" />
+        <div class="y_title animate__animated animate__rubberBand">Merry Christmas</div>
+      </div>`;
+      });
+    </script>
+  </body>
+</html>
