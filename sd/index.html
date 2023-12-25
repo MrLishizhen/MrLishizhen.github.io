@@ -12,13 +12,37 @@
   </head>
   <body>
     <div class="christmas">
-      <video
-        class="video"
+      <video class="video" muted src="./img/V-165791-7672212A.mp4"></video>
+    </div>
+    <div class="audio">
+      <audio
+        id="audio_item"
+        src="./铃儿响叮当.ogg"
         autoplay
-        muted
-        src="./img/V-165791-7672212A.mp4"
-      ></video>
-      <div class="loading animate__animated animate__lightSpeedInRight">
+        loop
+        preload="auto"
+      ></audio>
+    </div>
+    <div id="btn" class="btns">
+      <button onclick="buttonClick()">点击开启</button>
+      <span>ps: 会有音乐哦，记得带上耳机！！！</span>
+    </div>
+    <script>
+      let audio_hot = false;
+      const christmas = document.querySelector(".christmas");
+      const video = document.querySelector(".video");
+      const audio = document.querySelector(".audio");
+      const audio_item = document.querySelector("#audio_item");
+      const btn = document.querySelector("#btn");
+
+      function buttonClick() {
+        video.play();
+        music();
+        // setTimeout(() => {
+        btn.remove();
+        // }, 2000);
+        const div = document.createElement("div");
+        div.innerHTML = `<div class="loading animate__animated animate__lightSpeedInRight">
         猜猜后面是什么...
       </div>
       <div
@@ -30,27 +54,11 @@
         class="loading animate__animated animate__rotateIn animate__delay-3s"
       >
         别急别急,马上就来
-      </div>
-    </div>
-    <div class="audio">
-      <audio
-        id="audio_item"
-        src="./圣诞歌曲 - 铃儿响叮当.ogg"
-        autoplay
-        loop
-        preload="auto"
-      ></audio>
-    </div>
-    <script>
-      let audio_hot = false;
-      const christmas = document.querySelector(".christmas");
-      const video = document.querySelector(".video");
-      const audio = document.querySelector(".audio");
-      const audio_item = document.querySelector("#audio_item");
+      </div>`;
+        christmas.appendChild(div);
+      }
 
-      audio.addEventListener("click", function (e) {
-        e.preventDefault();
-        console.log("执行");
+      function music() {
         audio_hot = !audio_hot;
         if (audio_hot) {
           audio_item.play();
@@ -59,6 +67,11 @@
           audio_item.pause();
           audio.style.backgroundImage = `url(./img/背景音乐.png)`;
         }
+      }
+
+      audio.addEventListener("click", function (e) {
+        e.preventDefault();
+        music();
       });
       video.addEventListener("play", () => {
         // video.style.display = "none";
